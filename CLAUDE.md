@@ -127,9 +127,26 @@ When working in this repository:
 2. Document format-info.md with exam structure
 3. Optionally add practice-questions.md
 
+## Current State
+
+The repository structure is fully created with:
+- All 15 week folders with template files
+- Complete assignment materials (guidelines, rubrics, templates)
+- All exam materials (study guides, format info, practice questions)
+- Supporting resources (bibliography structure, citation guides, anti-plagiarism guide)
+- Policy documentation
+
+**Next steps**: Add specific content to template files (lecture notes, readings, activities, etc.)
+
+## Lecture Materials Organization
+
+Lectures are organized by topic (not by week) in `lectures/` directory. Each topic may span multiple weeks and is cross-referenced to relevant weeks. See `lectures/README.md` for the mapping between lecture topics and weekly content.
+
 ## Notes
 
 - This is an academic course repository - no build/test commands needed
 - Focus is on content organization and academic materials
 - Main interactions will be adding/editing course content in markdown
 - Maintain professional academic tone in all materials
+- Template files contain placeholder content to guide content creation
+- Many template files are intentionally empty, ready for customization
