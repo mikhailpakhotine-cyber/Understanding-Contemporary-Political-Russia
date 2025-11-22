@@ -1,0 +1,18 @@
+# Ensure consistent line endings
+* text=auto
+
+# Markdown files
+*.md text
+
+# Web files
+*.html text
+*.css text
+*.js text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text

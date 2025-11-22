@@ -6,10 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository contains course materials for **INS 3XXX: Understanding the Society of Contemporary Russian Federation**, a Fall 2024 course at Embry-Riddle Aeronautical University. The repository is organized to support both instructor preparation and student learning.
 
+**This is a GitHub Pages website** that renders markdown files dynamically using HTML, CSS, and JavaScript. The site provides a modern, academic interface for course navigation while maintaining all content in markdown format for easy editing.
+
 ## Repository Structure
 
 The repository is organized into the following main directories:
 
+### Content Directories (Markdown)
 - **`weeks/`** - Weekly course materials (15 weeks total, excluding holidays)
 - **`assignments/`** - Assignment guidelines, rubrics, and templates
 - **`exams/`** - Exam study guides and materials (3 exams)
@@ -17,6 +20,13 @@ The repository is organized into the following main directories:
 - **`lectures/`** - Lecture materials organized by topic
 - **`resources/`** - Supporting materials (bibliography, rubrics, citation guides, tools)
 - **`policies/`** - Course policy documents
+
+### Website Files (HTML/CSS/JS)
+- **`index.html`** - Main website entry point with navigation
+- **`assets/css/`** - Stylesheets for modern academic design
+- **`assets/js/`** - JavaScript for markdown rendering and interactivity
+- **`assets/images/`** - Images and media files
+- **`.nojekyll`** - Tells GitHub Pages to bypass Jekyll processing
 
 ## Course Topics (By Week)
 
@@ -142,11 +152,49 @@ The repository structure is fully created with:
 
 Lectures are organized by topic (not by week) in `lectures/` directory. Each topic may span multiple weeks and is cross-referenced to relevant weeks. See `lectures/README.md` for the mapping between lecture topics and weekly content.
 
+## Web Development
+
+### Technology Stack
+- **HTML5** - Structure and layout
+- **CSS3** - Modern academic styling with responsive design
+- **JavaScript (ES6+)** - Dynamic markdown rendering and navigation
+- **Marked.js** - Client-side markdown parser (loaded from CDN)
+
+### Local Development
+To test the website locally:
+1. Use a local web server (Python, Node.js, or VS Code Live Server)
+2. **Python**: `python -m http.server 8000`
+3. **Node.js**: `npx http-server`
+4. **VS Code**: Install "Live Server" extension and click "Go Live"
+
+Navigate to `http://localhost:8000` (or appropriate port) to view the site.
+
+### Deployment to GitHub Pages
+1. Push changes to the repository
+2. Go to repository Settings → Pages
+3. Set Source to "Deploy from a branch"
+4. Select branch (usually `main`) and `/` (root) folder
+5. Click Save
+6. Site will be available at `https://username.github.io/repository-name/`
+
+### File Organization for Web
+- **Content**: Keep all course content in markdown files (`.md`)
+- **Styling**: Modify `assets/css/style.css` for design changes
+- **Behavior**: Edit `assets/js/main.js` for functionality changes
+- **Navigation**: Update `index.html` to add/remove menu items
+
+### Making Content Changes
+1. Edit markdown files in their respective folders
+2. No need to modify HTML - content is loaded dynamically
+3. Test locally before pushing to ensure links work correctly
+4. Relative links between markdown files are automatically handled
+
 ## Notes
 
-- This is an academic course repository - no build/test commands needed
-- Focus is on content organization and academic materials
-- Main interactions will be adding/editing course content in markdown
+- This is a GitHub Pages website that renders markdown dynamically
+- Content is maintained in markdown for easy editing
+- Website provides modern academic interface with responsive design
+- No build/test commands needed - static site with client-side rendering
+- Main interactions: editing markdown content and testing in browser
 - Maintain professional academic tone in all materials
 - Template files contain placeholder content to guide content creation
-- Many template files are intentionally empty, ready for customization
